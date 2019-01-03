@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ErrBNB</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+  <div id="gallery"></div>
+  <div id="description">
+    <div id="booking"></div>
+    <div id="reviews"></div>
+  </div>
+  <div id="more"></div>
+  <script src="./lib/react.development.js"></script>
+  <script src="./lib/react-dom.development.js"></script>
+  <script src="./lib/react.development.js"></script>
+  <script src="http://localhost:1337/rooms/:id/bundle.js"></script>
+  <script src="http://localhost:8080/bundle.js"></script>
+  <script src="http://localhost:3123/rooms/:id/bundle.js"></script>
+  <script src="http://localhost:3124/rooms/:id/reviews.js"></script>
+  <script>
+    document.addEventListener('load', () => {
+      ReactDOM.render(
+          React.createElement(Gallery),
+          document.getElementById('gallery')
+      );
+      ReactDOM.render(
+        React.createElement(Booking),
+        document.getElementById('booking')
+      );
+      ReactDOM.render(
+        React.createElement(Reviews),
+        document.getElementById('reviews')
+      );
+      ReactDOM.render(
+        React.createElement(More),
+        document.getElementById('more')
+      );
+    });
+  </script>
+</body>
+</html>

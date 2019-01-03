@@ -1,0 +1,32 @@
+html {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+#gallery {
+}
+
+#description {
+  display: inline-block;
+  width: 100%;
+}
+
+#booking {
+  margin: 25px 0px 0px 50px;
+  float: right;
+  display: inline-block;
+  position: sticky;
+  top: 25px;
+  right: 120px;
+  max-width: 25%;
+  min-width: 25%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#reviews {
+  float: left;
+  margin-left: 75px;
+}
+
+#more {
+}
